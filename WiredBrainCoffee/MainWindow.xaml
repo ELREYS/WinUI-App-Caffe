@@ -1,0 +1,84 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="WiredBrainCoffee.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:controls="using:WiredBrainCoffee.Controls"
+    mc:Ignorable="d">
+
+    <Grid x:Name="root" Background="#222222">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <controls:HeaderControl Grid.ColumnSpan="3"/>
+
+        <!-- Customer list -->
+        <Grid Grid.Row="1" Background="#333333" Width="250" x:Name="customerListGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0"  Orientation="Horizontal">
+                <Button Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="AddFriend"/>
+                        <TextBlock Text="Add" Margin="5 0 0 0"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="0 10 10 10">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Delete"/>
+                        <TextBlock Text="Delete" Margin="5 0 0 0"/>
+                    </StackPanel>
+                </Button>
+                <Button Margin="0 10 10 10" Click="ButtonMoveNavigation_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Forward" x:Name="SymbolIconNavigation" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding Path=Customers,Mode=OneWay}"
+                      SelectedItem="{Binding SelectedCustomer,Mode=TwoWay}"
+                      DisplayMemberPath="FirstName"
+                      ScrollViewer.HorizontalScrollMode="Enabled"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      x:Name="customerListView"/>
+        </Grid>
+        <!-- Customer detail-->
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
+            <TextBox 
+                Header="Firstname" Text="{Binding 
+                Path=SelectedCustomer.FirstName,
+                Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox 
+                Header="Lastname" 
+                Margin="0 10 0 0" 
+                Text="{Binding 
+                Path=SelectedCustomer.LastName,
+                Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            <CheckBox Margin="0 20 0 0" IsChecked="{Binding Path=SelectedCustomer.IsDeveloper,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                Is Developer
+            </CheckBox>
+        </StackPanel>
+
+        <!-- Statusbar -->
+        <!-- <ToggleSwitch Grid.Row="2" Grid.Column="2" Header="Theme" OnContent="Light" OffContent="Dark" Toggled="ToggleSwitch_Toggled"  Loaded="ToggleSwitch_Loaded"/>-->
+        <Border Grid.Row="2"  Grid.ColumnSpan="3" Background="#444">
+            <TextBlock Text=" (c) Wired Brain Coffee" Foreground="White" Margin="5"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "WiredBrainCoffee (Package)", "WiredBrainCoffee (Package)\WiredBrainCoffee (Package).wapproj", "{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredBrainCoffee", "WiredBrainCoffee\WiredBrainCoffee.csproj", "{5E1A4C40-FB8C-444E-A48C-331A83423647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|ARM64.Build.0 = Debug|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x64.ActiveCfg = Debug|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x64.Build.0 = Debug|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x64.Deploy.0 = Debug|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x86.ActiveCfg = Debug|x86
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x86.Build.0 = Debug|x86
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Debug|x86.Deploy.0 = Debug|x86
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|ARM64.ActiveCfg = Release|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|ARM64.Build.0 = Release|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|ARM64.Deploy.0 = Release|ARM64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x64.ActiveCfg = Release|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x64.Build.0 = Release|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x64.Deploy.0 = Release|x64
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x86.ActiveCfg = Release|x86
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x86.Build.0 = Release|x86
+		{BB1D9AD7-5A72-4F19-B04B-E2084AFB9321}.Release|x86.Deploy.0 = Release|x86
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|ARM64.Build.0 = Debug|ARM64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|x64.ActiveCfg = Debug|x64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|x64.Build.0 = Debug|x64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|x86.ActiveCfg = Debug|x86
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Debug|x86.Build.0 = Debug|x86
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|ARM64.ActiveCfg = Release|ARM64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|ARM64.Build.0 = Release|ARM64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|x64.ActiveCfg = Release|x64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|x64.Build.0 = Release|x64
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|x86.ActiveCfg = Release|x86
+		{5E1A4C40-FB8C-444E-A48C-331A83423647}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E6EFDB5-D923-4C71-8F1C-2B0810755DBE}
+	EndGlobalSection
+EndGlobal
